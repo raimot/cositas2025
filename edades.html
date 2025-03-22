@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap demo</title>
+	</head>
+  
+	  <body>
+		<div class="container">
+		  <form action="#" method="get" >
+			
+				Nombre:
+				<input type="text" name="nombre" size="40">
+			
+				<br />
+				Email:
+				<input type="email" id="email" placeholder="Enter email" name="email">
+			
+				<br />
+				 Edad:
+				<input type="number" name="edad" id="edad" onBlur="validaEdad(this.value)">
+				
+		
+				<br /> 
+				Resultado: <input type="text" name="resultado" id="resultado">
+				<span id="mensaje"></span>
+			  <p>
+				<input type="button" value="Calcular">
+				<input type="reset">
+			  </p>
+		  </form>
+		  
+		  
+		</div>
+	  </body>
+		<script>
+
+			
+			function validaEdad(edad){
+				//alert ("llega"+edad)
+				let result = ""
+				if (edad >= 0 && edad <= 12){
+					result = "NIÑO"
+				}else if(edad > 12 && edad < 18){
+					result = "ADOLESCENTE"
+				}else if (edad >= 18 && edad < 30){
+					result = "ADULTO JOVEN"
+				}else{
+					result = "ADULTO MAYOR"
+				}
+				document.getElementById("resultado").value = result
+			}
+
+		</script> 
+</html>
+
