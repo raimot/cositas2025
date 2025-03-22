@@ -6,3 +6,6 @@ https://www.youtube.com/watch?v=jGehuhFhtnE
 
 git vscode
 https://www.youtube.com/watch?v=AYbgqmyg7dk
+
+git desde consola
+https://www.youtube.com/watch?v=VdGzPZ31ts8
