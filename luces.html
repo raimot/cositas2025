@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap demo</title>
+	</head>
+  
+	  <body>
+		<div class="container">
+		  <form action="#" method="get" >
+			
+				
+				<br />
+				 Light color:
+				<input type="text" name="color" id="color" onBlur="validaColor(this.value)">
+				
+		
+				<br /> 
+				Resultado: <input type="text" name="resultado" id="resultado">
+				<span id="mensaje"></span>
+			  <p>
+				<input type="button" value="Calcular">
+				<input type="reset">
+			  </p>
+		  </form>
+		  
+		  
+		</div>
+	  </body>
+		<script>
+
+			
+			function validaColor(color){
+				let trafficLight = color;
+				let message = ""
+				 
+				switch (trafficLight) {
+					case "red":
+						message = "Stop immediately.";
+						break;
+					case "yellow":
+						message = "Prepare to stop.";
+						break;
+					case "green":
+						message = "Proceed or continue driving.";
+						break;
+					default:
+						message = "Invalid traffic light color.";
+				}
+ 
+				console.log(message)
+				
+				document.getElementById("resultado").value=message
+				
+			}
+
+		</script> 
+</html>
+
